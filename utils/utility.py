@@ -263,13 +263,11 @@ def print_save_result(data, base_detector, n_baselines, n_clf, n_ite, roc_mat,
         f.writelines('method, '
                      'roc, best_roc, diff_roc,'
                      'ap, best_ap, diff_ap,'
-                     'p@m, best_p@m, diff_p@m,'
                      'best roc, best ap')
     else:
         f.writelines('method, '
                      'roc, ap, p@m,'
-                     'best roc, best ap, best prc, '
-                     'n_ite, n_clf')
+                     'best roc, best ap')
 
     print('method, roc, ap, p@m, best roc, best ap')
     delim = ','
@@ -284,19 +282,13 @@ def print_save_result(data, base_detector, n_baselines, n_clf, n_ite, roc_mat,
                     roc_diff[i]) + delim +
                 str(ap_scores[i]) + delim + str(top_ap) + delim + str(
                     ap_diff[i]) + delim +
-                top_roc_clf + delim +
-                top_ap_clf + delim +
-                str(n_ite) + delim +
-                str(n_clf))
+                top_roc_clf + delim + top_ap_clf)
         else:
             f.writelines(
                 '\n' + str(method_list[i]) + delim +
                 str(roc_scores[i]) + delim +
                 str(ap_scores[i]) + delim +
-                top_roc_clf + delim +
-                top_ap_clf + delim +
-                str(n_ite) + delim +
-                str(n_clf))
+                top_roc_clf + delim + top_ap_clf)
 
     f.close()
 

@@ -1,0 +1,20 @@
+
+ n_ite: 20
+ test_size: 0.4
+ n_baselines: 10
+
+ loc_region_perc: 0.1
+ loc_region_ite: 20
+ loc_region_threshold: 10
+ loc_min_features: 0.5
+ loc_region_size: 100
+ loc_region_min: 30
+ loc_region_max: 100
+
+ n_clf: 50
+ k_min: 5
+ k_max: 200
+ n_bins: 10
+ n_selected: 1
+ n_buckets: 5
+ execution_time: 180.2803671360016
