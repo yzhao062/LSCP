@@ -1,11 +1,11 @@
 # SCP (Selective Combination in Parallel Outlier Ensembles)
 ### Supplementary materials: datasets, demo source codes and sample outputs.
 
-Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. SCP: Selective Combination in Parallel Outlier Ensembles. *SIAM International Conference on Data Mining (SDM)*, 2019.
+Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. SCP: Selective Combination in Parallel Outlier Ensembles. 
+*SIAM International Conference on Data Mining (SDM)*, 2019. **Submitted, under review**.
 
 
-**[PDF](https://http://www.cs.toronto.edu/~yuezhao/pub)** | 
-**[Presentation Slides](https://www.cs.toronto.edu/~yuezhao/pub)** 
+**[PDF](https://http://www.cs.toronto.edu/~yuezhao/pub)** 
 
 ------------
 
