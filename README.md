@@ -21,7 +21,7 @@ Additional notes:
 In this paper, we propose a framework--called Selective Combination in Parallel Outlier Ensembles (SCP)--which addresses this issue by defining a local region around a test instance using the consensus of its nearest neighbors in randomly generated feature spaces.
 The top-performing base detectors in this local region are selected and combined as the model's final output.
 
-![SCP Flowchart](https://github.com/yzhao062/SCP/blob/master/figs/Flowchart2.png)
+![SCP Flowchart](https://github.com/yzhao062/SCP/blob/master/figs/flowchart2.png)
 
 ## Dependency
 The experiment codes are writen in Python 3.6 and built on a number of Python packages:
