@@ -18,8 +18,14 @@ Additional notes:
 ------------
 
 ##  Introduction
-In this paper, we propose a framework--called Selective Combination in Parallel Outlier Ensembles (SCP)--which addresses this issue by defining a local region around a test instance using the consensus of its nearest neighbors in randomly generated feature spaces.
-The top-performing base detectors in this local region are selected and combined as the model's final output.
+In unsupervised outlier ensembles, the absence of ground truth makes the combination of base detectors a challenging task. 
+Specifically, existing parallel outlier ensembles lack a reliable way of selecting competent base detectors, 
+affecting model accuracy and stability, during model combination. In this paper, 
+we propose a framework--called Selective Combination in Parallel Outlier Ensembles 
+(SCP)--which addresses this issue by defining a local region around a test instance using the consensus of its nearest neighbors in randomly generated feature spaces. 
+The top-performing base detectors in this local region are selected and combined as the model's final output. 
+Four SCP frameworks are proposed and compared with six widely used combination algorithms for parallel ensembles. 
+Experimental results demonstrate that the Average of Maximum variant of SCP (SCP_AOM) consistently outperforms the baseline algorithms on most real-world datasets.
 
 ![SCP Flowchart](https://github.com/yzhao062/SCP/blob/master/figs/flowchart2.png)
 
