@@ -72,4 +72,4 @@ python demo_lof.py
 
 Two evaluation methods are introduced and the result would be saved into "results" folder:
 1.  The area under receiver operating characteristic curve (**ROC**)
-2.  mean Average Precision (***mAP***) 
+2.  mean Average Precision (**mAP**) 
