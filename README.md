@@ -1,5 +1,5 @@
 # SCP (Selective Combination in Parallel Outlier Ensembles)
-### Supplementary materials: datasets, demo source codes and sample outputs.
+### Supplementary material: datasets, demo source codes and sample outputs.
 
 Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. SCP: Selective Combination in Parallel Outlier Ensembles. 
 *SIAM International Conference on Data Mining (SDM)*, 2019. **Submitted, under review**.
@@ -63,3 +63,13 @@ Batch installation is possible using the supplied "requirements.txt" with pip or
 
 All datasets are accesible from http://odds.cs.stonybrook.edu/. Citation Suggestion for the datasets please refer to: 
 > Shebuti Rayana (2016).  ODDS Library [http://odds.cs.stonybrook.edu]. Stony Brook, NY: Stony Brook University, Department of Computer Science.
+
+## Usage and Sample Output (Demo Version)
+Experiments could be reproduced by running **demo_lof.py** directly. You could simply download/clone the entire repository and execute the code by 
+```bash
+python demo_lof.py
+```
+
+Two evaluation methods are introduced and the result would be saved into "results" folder:
+1.  The area under receiver operating characteristic curve (**ROC**)
+2.  mean Average Precision (***mAP***) 
