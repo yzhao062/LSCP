@@ -205,8 +205,8 @@ if __name__ == '__main__':
 
         test_target_list.extend([pred_scores_best,
                                  pred_scores_ens])
-        method_list.extend(['SCP_a',
-                            'SCP_moa'])
+        method_list.extend(['LSCP_a',
+                            'LSCP_moa'])
         ######################################################################
 
         pred_scores_best = np.zeros([X_test.shape[0], ])
@@ -238,8 +238,8 @@ if __name__ == '__main__':
 
         test_target_list.extend([pred_scores_best,
                                  pred_scores_ens])
-        method_list.extend(['SCP_m',
-                            'SCP_aom'])
+        method_list.extend(['LSCP_m',
+                            'LSCP_aom'])
 
         ######################################################################
 

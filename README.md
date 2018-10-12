@@ -1,7 +1,7 @@
 # LSCP (Locally Selective Combination in Parallel Outlier Ensembles)
 ### Supplementary material: datasets, demo source codes and sample outputs.
 
-Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Selective Combination in Parallel Outlier Ensembles. 
+Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Locally Selective Combination in Parallel Outlier Ensembles. 
 *SIAM International Conference on Data Mining (SDM)*, 2019. **Submitted, under review**.
 
 
