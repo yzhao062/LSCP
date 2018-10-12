@@ -5,7 +5,7 @@ Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Locally Selective C
 *SIAM International Conference on Data Mining (SDM)*, 2019. **Submitted, under review**.
 
 
-**[PDF](https://http://www.cs.toronto.edu/~yuezhao/pub)** 
+**[Download PDF](https://http://www.cs.toronto.edu/~yuezhao/pub)** 
 
 ------------
 
