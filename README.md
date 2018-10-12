@@ -1,7 +1,7 @@
-# SCP (Selective Combination in Parallel Outlier Ensembles)
+# LSCP (Locally Selective Combination in Parallel Outlier Ensembles)
 ### Supplementary material: datasets, demo source codes and sample outputs.
 
-Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. SCP: Selective Combination in Parallel Outlier Ensembles. 
+Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Selective Combination in Parallel Outlier Ensembles. 
 *SIAM International Conference on Data Mining (SDM)*, 2019. **Submitted, under review**.
 
 
@@ -11,8 +11,8 @@ Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. SCP: Selective Combinatio
 
 Additional notes:
 1. Three versions of codes are (going to be) provided:
-   1. **Demo version** (demo_lof.py) is created for the fast reproduction of the experiment results. The demo version only compares the baseline algorithms with SCP algorithms. The effect of parameters, e.g., the choice of *k*, are not included.
-   2. **Full version** (tba)  will be released after moderate code cleanup and optimization. In contrast to the demo version, the full version also considers the impact of parameter setting. The full version is therefore relatively slow, which will be further optimized. It is noted the demo version is sufficient to prove the idea. We suggest to using the demo version while playing with SCP, during the full version is being optimized.
+   1. **Demo version** (demo_lof.py) is created for the fast reproduction of the experiment results. The demo version only compares the baseline algorithms with LSCP algorithms. The effect of parameters, e.g., the choice of *k*, are not included.
+   2. **Full version** (tba)  will be released after moderate code cleanup and optimization. In contrast to the demo version, the full version also considers the impact of parameter setting. The full version is therefore relatively slow, which will be further optimized. It is noted the demo version is sufficient to prove the idea. We suggest to using the demo version while playing with LSCP, during the full version is being optimized.
    3. **Production version** (tba) will be released with full optimization and testing as a framework. The purpose of this version is to be used in real applications, which should require fewer dependencies and faster execution.
 3. It is understood that there are **small variations** in the results due to the random process, e.g., spliting the training and test sets. Thus, running demo codes would only result in similar results to the paper but not the exactly same results.
 ------------
@@ -22,12 +22,12 @@ In unsupervised outlier ensembles, the absence of ground truth makes the combina
 Specifically, existing parallel outlier ensembles lack a reliable way of selecting competent base detectors, 
 affecting model accuracy and stability, during model combination. In this paper, 
 we propose a framework--called Selective Combination in Parallel Outlier Ensembles 
-(SCP)--which addresses this issue by defining a local region around a test instance using the consensus of its nearest neighbors in randomly generated feature spaces. 
+(LSCP)--which addresses this issue by defining a local region around a test instance using the consensus of its nearest neighbors in randomly generated feature spaces. 
 The top-performing base detectors in this local region are selected and combined as the model's final output. 
-Four SCP frameworks are proposed and compared with six widely used combination algorithms for parallel ensembles. 
-Experimental results demonstrate that the Average of Maximum variant of SCP (SCP_AOM) consistently outperforms the baseline algorithms on most real-world datasets.
+Four LSCP frameworks are proposed and compared with six widely used combination algorithms for parallel ensembles. 
+Experimental results demonstrate that the Average of Maximum variant of LSCP (LSCP_AOM) consistently outperforms the baseline algorithms on most real-world datasets.
 
-![SCP Flowchart](https://github.com/yzhao062/SCP/blob/master/figs/flowchart2.png)
+![LSCP Flowchart](https://github.com/yzhao062/LSCP/blob/master/figs/flowchart2.png)
 
 ## Dependency
 The experiment codes are writen in Python 3.6 and built on a number of Python packages:
