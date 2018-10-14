@@ -36,7 +36,6 @@ def aom(scores, n_buckets, n_estimators, standard=True):
             scores[:, estimators_list[head:tail]], axis=1)
 
         head = head + n_estimators_per_bucket
-        tail = tail + n_estimators_per_bucket
 
     return np.mean(scores_aom, axis=1)
 
@@ -77,6 +76,5 @@ def moa(scores, n_buckets, n_estimators):
             scores[:, estimators_list[head:tail]], axis=1)
 
         head = head + n_estimators_per_bucket
-        tail = tail + n_estimators_per_bucket
 
     return np.max(scores_moa, axis=1)
