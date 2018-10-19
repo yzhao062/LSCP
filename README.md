@@ -73,12 +73,12 @@ Two evaluation methods are introduced and the result would be saved into "result
 1.  The area under receiver operating characteristic curve (**ROC**)
 2.  mean Average Precision (**mAP**) 
 
-## Results
+## Results 
 
 **Table 2: ROC-AUC scores (average of 20 independent trials, highest score highlighted in bold)**
 
-| Datasets   | #GG_A  | #GG_M  | #GG_WA  | #GG_TH | #GG_AOM | #GG_MOA | #LSCP_A | #LSCP_M | #LSCP_MOA | LSCP_AOM |
-| -----------| ------ | ------ | --------| ------ | --------| ------- | ------- | ------- | --------- | ------- |	
+| Datasets   | GG_A   | GG_M   | GG_WA  | GG_TH  | GG_AOM | GG_MOA | LSCP_A | LSCP_M | LSCP_MOA | LSCP_AOM |
+| -----------| ------ | ------ | -------| ------ | -------| ------ | ------ | ------ | -------- | -------- |	
 | annthyroid | 0.7679 | 0.7874 | 0.7653 | 0.7656 | 0.7827 | 0.7711 | 0.7509 | 0.7620 | **0.7924** | 0.7434 |
 | arrhythmia | 0.7789 | 0.7572 | 0.7790 | 0.7317 | 0.7655 | 0.7772 | 0.7779 | 0.7743 | 0.7516 | **0.7791** |
 | breastw    | 0.8662 | 0.7444 | 0.8702 | 0.8503 | 0.8338 | 0.8529 | 0.6920 | 0.8454 | 0.7158 | **0.8722** |
@@ -97,3 +97,35 @@ Two evaluation methods are introduced and the result would be saved into "result
 | vertebral  | 0.3591 | 0.3713 | 0.3584 | 0.3839 | 0.3883 | 0.3659 | 0.3253 | 0.3798 | **0.4723** | 0.3471 |
 | vowels     | 0.9117 | **0.9338** | 0.9101 | 0.9229 | 0.9284 | 0.9164 | 0.9224 | 0.9155 | 0.9261 | 0.8998 |
 | wbc        | 0.9390 | 0.9313 | 0.9390 | 0.9333 | 0.9351 | 0.9391 | 0.9359 | 0.9331 | 0.9279 | **0.9400** |
+
+**Table 3: mAP scores (average of 20 independent trials, highest score highlighted in bold)**
+
+| Datasets   | GG_A   | GG_M   | GG_WA  | GG_TH  | GG_AOM | GG_MOA | LSCP_A | LSCP_M | LSCP_MOA | LSCP_AOM |
+| -----------| ------ | ------ | -------| ------ | -------| ------ | ------ | ------ | -------- | -------- |
+| annthyroid | 0.2452 | 0.2424 | 0.2460 | 0.2452 | **0.2617** | 0.2539 | 0.2379 | 0.2555 | 0.2423 | 0.2527 |
+| arrhythmia | 0.3650 | 0.3516 | 0.3651 | 0.3326 | 0.3576 | 0.3650 | 0.3653 | 0.3614 | 0.3637 | **0.3680** | 
+| breastw    | 0.6513 | 0.4797 | 0.6577 | 0.6335 | 0.5926 | 0.6321 | 0.4772 | 0.6110 | 0.4796 | **0.6739** |
+| cardio     | 0.4260 | 0.4083 | 0.4295 | 0.4355 | 0.4496 | 0.4485 | 0.4108 | 0.4669 | 0.3399 | **0.4946** |
+| glass      | 0.1397 | 0.1328 | 0.1430 | 0.1410 | 0.1340 | 0.1358 | 0.1341 | 0.1314 | **0.1479** | 0.1366 |
+| letter     | 0.2323 | 0.3495 | 0.2275 | 0.2388 | 0.3018 | 0.2429 | 0.2121 | 0.2377 | **0.3682** | 0.2283 |
+| lympho     | 0.8227 | 0.8001 | 0.8155 | 0.8227 | 0.8133 | 0.8227 | 0.8218 | 0.8116 | 0.7977 | **0.8300** |
+| mnist      | 0.3905 | 0.3654 | 0.3913 | 0.3819 | 0.3868 | 0.3934 | 0.3914 | 0.3949 | 0.3326 | **0.3982** |
+| musk       | 0.9331 | 0.8122 | 0.9536 | 0.9472 | 0.8908 | 0.9659 | 0.9365 | 0.8487 | 0.9097 | **0.9736** |
+| pendigits  | 0.0690 | 0.0793 | 0.0693 | 0.0745 | 0.0820 | 0.0751 | 0.0633 | 0.0809 | 0.0573 | **0.0853** |
+| pima       | 0.4901 | 0.4519 | 0.4913 | 0.4461 | 0.4662 | 0.4875 | 0.4879 | 0.4793 | 0.4366 | **0.4955** |
+| satellite  | 0.4064 | **0.4447** | 0.4066 | 0.4071 | 0.4421 | 0.4167 | 0.4146 | 0.4404 | 0.4256 | 0.4208 |
+| satimage-2 | 0.4092 | 0.5297 | 0.4291 | 0.4268 | 0.5998 | 0.5236 | 0.3584 | 0.6320 | 0.3801 | **0.6408** |
+| shuttle    | 0.1300 | 0.1207 | 0.1295 | 0.1316 | 0.1265 | 0.1311 | 0.1203 | 0.1299 | 0.1125 | **0.1335** |
+| thyroid    | 0.4257 | 0.2467 | 0.4397 | 0.4274 | 0.3338 | 0.4217 | 0.3459 | 0.3864 | 0.2449 | **0.4692** |
+| vertebral  | 0.1054 | 0.1111 | 0.1053 | 0.1144 | 0.1113 | 0.1063 | 0.1003 | 0.1104 | **0.1445** | 0.1054 |
+| vowels     | 0.3810 | **0.4135** | 0.3793 | 0.3835 | 0.4072 | 0.3887 | 0.4079 | 0.3938 | 0.3724 | 0.3547 |
+| wbc        | 0.5536 | 0.5264 | 0.5540 | 0.5496 | 0.5412 | 0.5552 | 0.5497 | 0.5505 | 0.5315 | **0.5567** |
+
+## Conclusions
+
+In this work, we propose four variants of a novel unsupervised outlier detection framework called Locally Selective Combination in Parallel Outlier Ensembles (LSCP). 
+Unlike traditional combination approaches, LSCP identifies the top-performing base detectors for each test instance relative to its local region. 
+To validate the effectiveness of this approach, the proposed framework is assessed on 18 real-world datasets and observed to be superior to baseline algorithms. 
+The ensemble approach *LSCP_AOM* demonstrated the best performance achieving the highest detection score on 11/18 datasets with respect to ROC-AUC and 12/18 datasets with respect to mAP. 
+Theoretical considerations under the bias-variance framework are also provided for LSCP, alongside visualizations, to provide a holistic view of the framework. Since LSCP demonstrates the promise of data locality, we hope that future work extends this exploration by investigating the use of heterogeneous base detectors and more reliable pseudo ground truth generation methods. 
+All source code, experimental results and figures used in this study are made publicly available. 
