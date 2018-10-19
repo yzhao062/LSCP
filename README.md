@@ -78,7 +78,7 @@ Two evaluation methods are introduced and the result would be saved into "result
 **Table 2: ROC-AUC scores (average of 20 independent trials, highest score highlighted in bold)**
 
 | Datasets   | #GG_A  | #GG_M  | #GG_WA  | #GG_TH | #GG_AOM | #GG_MOA | #LSCP_A | #LSCP_M | #LSCP_MOA | LSCP_AOM |
-| -----------| ------ | ------ | --------| ------------ | -----------| ------------ | ------------ | ------------ | ------------ |	
+| -----------| ------ | ------ | --------| ------ | --------| ------- | ------- | ------- | --------- | ------- |	
 | annthyroid | 0.7679 | 0.7874 | 0.7653 | 0.7656 | 0.7827 | 0.7711 | 0.7509 | 0.7620 | **0.7924** | 0.7434 |
 | arrhythmia | 0.7789 | 0.7572 | 0.7790 | 0.7317 | 0.7655 | 0.7772 | 0.7779 | 0.7743 | 0.7516 | **0.7791** |
 | breastw    | 0.8662 | 0.7444 | 0.8702 | 0.8503 | 0.8338 | 0.8529 | 0.6920 | 0.8454 | 0.7158 | **0.8722** |
