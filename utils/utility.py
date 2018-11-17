@@ -12,7 +12,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.utils import column_or_1d
 from sklearn.utils import check_random_state
 from sklearn.utils.random import sample_without_replacement
-import arff
 
 from models.lof import Lof
 from models.knn import Knn
