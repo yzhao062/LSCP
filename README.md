@@ -4,17 +4,19 @@
 Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Locally Selective Combination in Parallel Outlier Ensembles. 
 *SIAM International Conference on Data Mining (SDM)*, 2019. **Submitted, under review**.
 
+**Update** (Dec 6th, 2018): LSCP has been included as part of 
+**[Python Outlier Detection (PyOD)](https://github.com/yzhao062/pyod)**
 
-**[Download PDF (preprint)](https://www.cs.toronto.edu/~yuezhao/pub)**
 
+**[Download PDF (preprint)](https://www.cs.toronto.edu/~yuezhao/pub/)**
+**[Download PDF (arxiv)](https://arxiv.org/abs/1812.01528)**
 ------------
 
 Additional notes:
-1. Three versions of codes are (going to be) provided:
+1. Two versions of codes are provided:
    1. **Demo version** (demo_lof.py) is created for the fast reproduction of the experiment results. The demo version only compares the baseline algorithms with LSCP algorithms. The effect of parameters, e.g., the choice of *k*, are not included.
-   2. **Full version** (tba)  will be released after moderate code cleanup and optimization. In contrast to the demo version, the full version also considers the impact of parameter setting. The full version is therefore relatively slow, which will be further optimized. It is noted the demo version is sufficient to prove the idea. We suggest to using the demo version while playing with LSCP, during the full version is being optimized.
-   3. **Production version** (tba) will be released with full optimization and testing as a framework. The purpose of this version is to be used in real applications, which should require fewer dependencies and faster execution.
-3. It is understood that there are **small variations** in the results due to the random process, e.g., spliting the training and test sets. Thus, running demo codes would only result in similar results to the paper but not the exactly same results.
+   2. **Production version** ([Python Outlier Detection (PyOD)](https://github.com/yzhao062/pyod)) is released with full optimization and testing as a framework. The purpose of this version is to be used in real applications, which should require fewer dependencies and faster execution.
+2. It is understood that there are **small variations** in the results due to the random process, e.g., spliting the training and test sets. Thus, running demo codes would only result in similar results to the paper but not the exactly same results.
 ------------
 
 ##  Introduction
