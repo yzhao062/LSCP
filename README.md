@@ -10,9 +10,11 @@ Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Locally Selective C
 
 **[Download PDF (preprint)](https://www.cs.toronto.edu/~yuezhao/pub/)**
 **[Download PDF (arxiv)](https://arxiv.org/abs/1812.01528)**
+
 ------------
 
-Additional notes:
+### Additional notes
+
 1. Two versions of codes are provided:
    1. **Demo version** (demo_lof.py) is created for the fast reproduction of the experiment results. The demo version only compares the baseline algorithms with LSCP algorithms. The effect of parameters, e.g., the choice of *k*, are not included.
    2. **Production version** ([Python Outlier Detection (PyOD)](https://github.com/yzhao062/pyod)) is released with full optimization and testing as a framework. The purpose of this version is to be used in real applications, which should require fewer dependencies and faster execution.
