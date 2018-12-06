@@ -4,12 +4,12 @@
 Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Locally Selective Combination in Parallel Outlier Ensembles. 
 *SIAM International Conference on Data Mining (SDM)*, 2019. **Submitted, under review**.
 
-**Update** (Dec 6th, 2018): LSCP has been included as part of 
-**[Python Outlier Detection (PyOD)](https://github.com/yzhao062/pyod)**
+1. **Update** (Dec 6th, 2018): LSCP has been included as part of 
+   **[Python Outlier Detection (PyOD)](https://github.com/yzhao062/pyod)**
 
+2. **[Download PDF (personal website)](https://www.cs.toronto.edu/~yuezhao/pub/)**
 
-**[Download PDF (preprint)](https://www.cs.toronto.edu/~yuezhao/pub/)**
-**[Download PDF (arxiv)](https://arxiv.org/abs/1812.01528)**
+3. **[Download PDF (arxiv)](https://arxiv.org/abs/1812.01528)**
 
 ------------
 
