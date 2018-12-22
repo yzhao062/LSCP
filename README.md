@@ -2,27 +2,28 @@
 ### Supplementary material: datasets, demo codes, and sample outputs.
 
 Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Locally Selective Combination in Parallel Outlier Ensembles. 
-*SIAM International Conference on Data Mining (SDM)*, 2019. **Submitted, under review**.
+*SIAM International Conference on Data Mining (SDM)*, 2019. **Accepted, to appear**.
 
 You could cite the paper with Biblatex entry:
-
-    @article{zhao2018lscp,
-      title={LSCP: Locally Selective Combination in Parallel Outlier Ensembles},
-      author={Zhao, Yue and Hryniewicki, Maciej K and Nasrullah, Zain and Li, Zheng},
-      journal={arXiv preprint arXiv:1812.01528},
-      year={2018}
+        
+    @conference{zhao2019lscp,
+      title = {{LSCP}: Locally Selective Combination in Parallel Outlier Ensembles},
+      author = {Zhao, Yue and Hryniewicki, Maciej K and Nasrullah, Zain and Li, Zheng},
+      booktitle = {SIAM International Conference on Data Mining},
+      publisher = {Society for Industrial and Applied Mathematics},
+      address = {Calgary, Canada},
+      month = {May},
+      year = {2019}
     }
 
+**Update** (Dec 21th, 2018): LSCP has been accepted at SDM 2019. Acceptance rate 22.7% (90/397).
 
 **Update** (Dec 6th, 2018): LSCP has been included as part of **[Python Outlier Detection (PyOD)](https://github.com/yzhao062/pyod)**, 
 pending to be released in pyod V0.6.6.
 
-1. **[Download PDF (personal website)](https://www.cs.toronto.edu/~yuezhao/pub/)**
+1. **[Download PDF (arxiv)](https://arxiv.org/abs/1812.01528)**
 
-2. **[Download PDF (arxiv)](https://arxiv.org/abs/1812.01528)**
-
-3. **[Production Version](https://github.com/yzhao062/pyod)**
-
+2. **[Production Version](https://github.com/yzhao062/pyod)**
 
 
  
@@ -33,7 +34,7 @@ pending to be released in pyod V0.6.6.
 1. Two versions of codes are provided:
    1. **Demo version** (demo_lof.py) is created for the fast reproduction of the experiment results. The demo version only compares the baseline algorithms with LSCP algorithms. The effect of parameters, e.g., the choice of *k*, are not included.
    2. **Production version** ([Python Outlier Detection (PyOD)](https://github.com/yzhao062/pyod)) is released with full optimization and testing as a framework. The purpose of this version is to be used in real applications, which should require fewer dependencies and faster execution.
-2. It is understood that there are **small variations** in the results due to the random process, e.g., spliting the training and test sets. Thus, running demo codes would only result in similar results to the paper but not the exactly same results.
+2. It is understood that there are **small variations** in the results due to the random process, e.g., splitting the training and test sets. Thus, running demo codes would only result in similar results to the paper but not the exactly same results.
 ------------
 
 ##  Introduction
