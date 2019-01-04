@@ -6,6 +6,7 @@ import numpy as np
 import scipy.io as scio
 from scipy.stats import scoreatpercentile
 
+import sklearn
 from sklearn.neighbors import KDTree
 from sklearn.metrics import precision_score
 from sklearn.preprocessing import StandardScaler
@@ -13,7 +14,7 @@ from sklearn.utils import column_or_1d
 from sklearn.utils import check_random_state
 from sklearn.utils.random import sample_without_replacement
 
-from models.lof import Lof
+from models.lof import LOF
 from models.knn import Knn
 
 
@@ -113,41 +114,15 @@ def loaddata(filename):
     return X_orig, y_orig
 
 
-def read_arff(file_path, misplaced_list):
-    misplaced = False
-    for item in misplaced_list:
-        if item in file_path:
-            misplaced = True
-
-    file = arff.load(open(file_path))
-    data_value = np.asarray(file['data'])
-    attributes = file['attributes']
-
-    X = data_value[:, 0:-2]
-    if not misplaced:
-        y = data_value[:, -1]
-    else:
-        y = data_value[:, -2]
-    y[y == 'no'] = 0
-    y[y == 'yes'] = 1
-    y = y.astype('float').astype('int').ravel()
-
-    if y.sum() > len(y):
-        print(attributes)
-        raise ValueError('wrong sum')
-
-    return X, y
-
-
 def train_predict_lof(k_list, X_train_norm, X_test_norm, train_scores,
                       test_scores):
     # initialize base detectors
     clf_list = []
     for k in k_list:
-        clf = Lof(n_neighbors=k)
+        clf = LOF(n_neighbors=k)
         clf.fit(X_train_norm)
-        train_score = clf.negative_outlier_factor_ * -1
-        test_score = clf.decision_function(X_test_norm) * -1
+        train_score = clf.decision_scores_
+        test_score = clf.decision_function(X_test_norm)
         clf_name = 'lof_' + str(k)
 
         clf_list.append(clf_name)

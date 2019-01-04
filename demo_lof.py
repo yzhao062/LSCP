@@ -7,6 +7,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import average_precision_score
 
+from models.lof import LOF
+from models.feature_bagging import FeatureBagging
 from models.combination import aom, moa
 from utils.stat_models import pearsonr
 from utils.utility import get_local_region
@@ -27,12 +29,12 @@ np.set_printoptions(suppress=True, precision=4)
 # data = 'annthyroid' #
 # data = 'arrhythmia'
 # data = 'breastw' #
-data = 'cardio'
+# data = 'cardio'
 # data = 'glass'
 # data = 'ionosphere'
 # data = 'letter'
 # data = 'lympho'
-# data = 'mnist'
+data = 'mnist'
 # data = 'musk'
 # data = 'optdigits'
 # data = 'pendigits'
@@ -49,7 +51,7 @@ data = 'cardio'
 base_detector = 'lof'
 n_ite = 20  # number of iterations
 test_size = 0.4  # training = 60%, testing = 40%
-n_baselines = 10  # the number of baseline algorithms, DO NOT CHANGE
+n_baselines = 11  # the number of baseline algorithms, DO NOT CHANGE
 
 # reference pearson size:
 # https://www.researchgate.net/post/What_is_the_minimum_sample_size_to_run_Pearsons_R
@@ -118,6 +120,15 @@ if __name__ == '__main__':
                                                       train_scores,
                                                       test_scores)
 
+        #######################################################################
+        # fit feature bagging
+        clf = FeatureBagging(base_estimator=LOF(k_list[int(len(k_list) / 2)]),
+                             n_estimators=len(k_list))
+        print(clf)
+        clf.fit(X_train_norm)
+        target_test_feature_bagging = clf.decision_function(X_test_norm)
+        test_target_list.append(target_test_feature_bagging)
+        method_list.append('FB')
         #######################################################################
         # generate normalized scores
         train_scores_norm, test_scores_norm = standardizer(train_scores,
