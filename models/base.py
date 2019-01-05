@@ -277,8 +277,6 @@ class BaseDetector(object):
         if y is not None:
             check_classification_targets(y)
             self._classes = len(np.unique(y))
-            warnings.warn(
-                "y should not be presented in unsupervised learning.")
         return self
 
     def _process_decision_scores(self):
