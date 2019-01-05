@@ -158,7 +158,7 @@ def save_script(data, base_detector, timestamp, n_ite, test_size, n_baselines,
                 loc_region_perc, loc_region_ite, loc_region_strength,
                 loc_min_features, loc_region_size, loc_region_min,
                 loc_region_max, n_clf, k_min, k_max, n_bins, n_selected,
-                n_buckets, execution_time):
+                n_buckets, fb_n_neighbors, execution_time):
     # initialize the log directory if it does not exist
     pathlib.Path('results').mkdir(parents=True, exist_ok=True)
     f = open(
@@ -180,18 +180,24 @@ def save_script(data, base_detector, timestamp, n_ite, test_size, n_baselines,
     f.writelines("\n")
 
     f.writelines("\n n_clf: " + str(n_clf))
-    # f.writelines("\n alpha: " + str(alpha))
+
     f.writelines("\n k_min: " + str(k_min))
     f.writelines("\n k_max: " + str(k_max))
     f.writelines("\n n_bins: " + str(n_bins))
     f.writelines("\n n_selected: " + str(n_selected))
     f.writelines("\n n_buckets: " + str(n_buckets))
+    f.writelines("\n")
+
+    f.writelines("\n fb n_neighbors: ")
+    for n_neighnors in fb_n_neighbors:
+        f.writelines(str(n_neighnors) + ", ")
+    f.writelines("\n")
 
     f.writelines("\n execution_time: " + str(execution_time))
     f.close()
 
 
-def print_save_result(data, base_detector, n_baselines, n_clf, n_ite, roc_mat,
+def print_save_result(data, base_detector, n_baselines, roc_mat,
                       ap_mat, method_list, timestamp, verbose):
     """
     :param data:

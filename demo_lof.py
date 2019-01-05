@@ -29,10 +29,10 @@ np.set_printoptions(suppress=True, precision=4)
 # data = 'annthyroid' #
 # data = 'arrhythmia'
 # data = 'breastw' #
-# data = 'cardio'
+data = 'cardio'
 # data = 'glass'
 # data = 'ionosphere'
-data = 'letter'
+# data = 'letter'
 # data = 'lympho'
 # data = 'mnist'
 # data = 'musk'
@@ -79,6 +79,9 @@ assert (n_clf % n_buckets == 0)  # in case wrong number of buckets
 
 # flag for printing and output saving
 verbose = True
+
+# record of feature bagging detector
+fb_n_neighbors = []
 ###############################################################################
 
 if __name__ == '__main__':
@@ -122,11 +125,15 @@ if __name__ == '__main__':
                                                       test_scores)
 
         #######################################################################
-        # fit feature bagging
-        clf = FeatureBagging(base_estimator=LOF(k_list[int(len(k_list) / 2)]),
+        # fit feature bagging using median of k_list
+        n_neighbors = int(np.median(k_list))
+        clf = FeatureBagging(base_estimator=LOF(n_neighbors=n_neighbors),
                              n_estimators=len(k_list))
         print(clf)
+        fb_n_neighbors.append(n_neighbors)
         clf.fit(X_train_norm)
+
+        # generate scores
         target_test_feature_bagging = clf.decision_function(X_test_norm)
         test_target_list.append(target_test_feature_bagging)
         method_list.append('FB')
@@ -271,8 +278,9 @@ if __name__ == '__main__':
                 loc_region_perc, loc_region_ite, loc_region_threshold,
                 loc_min_features, loc_region_size, loc_region_min,
                 loc_region_max, n_clf, k_min, k_max, n_bins, n_selected,
-                n_buckets, execution_time)
+                n_buckets, fb_n_neighbors, execution_time)
+
     # print and save the result
     # default location is /results/***.csv
-    print_save_result(data, base_detector, n_baselines, n_clf, n_ite, roc_mat,
+    print_save_result(data, base_detector, n_baselines, roc_mat,
                       ap_mat, method_list, timestamp, verbose)
