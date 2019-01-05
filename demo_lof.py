@@ -32,7 +32,7 @@ np.set_printoptions(suppress=True, precision=4)
 # data = 'cardio'
 # data = 'glass'
 # data = 'ionosphere'
-# data = 'letter'
+data = 'letter'
 # data = 'lympho'
 # data = 'mnist'
 # data = 'musk'
