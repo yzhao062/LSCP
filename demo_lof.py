@@ -34,7 +34,7 @@ np.set_printoptions(suppress=True, precision=4)
 # data = 'ionosphere'
 # data = 'letter'
 # data = 'lympho'
-data = 'mnist'
+# data = 'mnist'
 # data = 'musk'
 # data = 'optdigits'
 # data = 'pendigits'
@@ -103,6 +103,7 @@ if __name__ == '__main__':
         if k_max > X_train.shape[0]:
             k_max = X_train.shape[0]
         k_list = random_state.randint(k_min, k_max, size=n_clf).tolist()
+        k_list.sort()
 
         # normalized the data
         X_train_norm, X_test_norm = standardizer(X_train, X_test)
