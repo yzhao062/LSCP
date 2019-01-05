@@ -128,7 +128,7 @@ if __name__ == '__main__':
         # fit feature bagging using median of k_list
         n_neighbors = int(np.median(k_list))
         clf = FeatureBagging(base_estimator=LOF(n_neighbors=n_neighbors),
-                             n_estimators=len(k_list))
+                             n_estimators=len(k_list), check_estimator=False)
         print(clf)
         fb_n_neighbors.append(n_neighbors)
         clf.fit(X_train_norm)
