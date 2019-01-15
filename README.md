@@ -63,7 +63,7 @@ pip install -r requirements.txt
 ````
 
 ## Datasets
-18 datasets are used (see dataset folder):
+20 datasets are used (see dataset folder):
 
 | Datasets   | #Sample Dimension  | Dimension  | #Outliers  | # Outlier Perc|
 | -----------| ------------------ | ---------- | ---------- | ------------- |
@@ -71,23 +71,30 @@ pip install -r requirements.txt
 | Arrhythmia | 452                | 274        | 66         | 14.60         |
 | Breastw    | 683                | 9          | 239        | 34.99         |
 | Cardio     | 1831               | 21         | 176        | 9.61          |
-| Glass      | 214                | 9          | 9          | 4.21          |
 | Letter     | 1600               | 32         | 100        | 6.25          |
-| Lympho     | 148                | 18         | 6          | 4.05          |
-| Mnist      | 7603               | 100        | 700        | 9.21          |
+| MNIST      | 7603               | 100        | 700        | 9.21          |
 | Musk       | 3062               | 166        | 97         | 3.17          |
+| PageBlocks | 5393               | 10         | 510        | 9.46          |
 | Pendigits  | 6870               | 16         | 156        | 2.27          |
 | Pima       | 768                | 8          | 268        | 34.90         |
 | Satellite  | 6435               | 36         | 2036       | 31.64         |
 | Satimage-2 | 5803               | 36         | 71         | 1.22          |
 | Shuttle    | 49097              | 9          | 3511       | 7.15          |
+| SpamSpace  | 4207               | 57         | 1679       | 39.91         |
+| Stamps     | 340                | 9          | 31         | 9.12          |
 | Thyroid    | 3772               | 6          | 93         | 2.47          |
 | Vertebral  | 240                | 6          | 30         | 12.50         |
 | Vowels     | 1456               | 12         | 50         | 3.43          |
 | Wbc        | 378                | 30         | 21         | 5.56          |
+| Wilt       | 4819               | 5          | 257        | 5.33          |
 
-All datasets are accesible from http://odds.cs.stonybrook.edu/. Citation Suggestion for the datasets please refer to: 
+All datasets are accessible from http://odds.cs.stonybrook.edu/ and
+http://www.dbs.ifi.lmu.de/research/outlier-evaluation/DAMI/.
+
+Citation Suggestion for the datasets please refer to: 
 > Shebuti Rayana (2016).  ODDS Library [http://odds.cs.stonybrook.edu]. Stony Brook, NY: Stony Brook University, Department of Computer Science.
+
+> Campos, G.O., Zimek, A., Sander, J., Campello, R.J., Micenková, B., Schubert, E., Assent, I. and Houle, M.E., 2016. On the evaluation of unsupervised outlier detection: measures, datasets, and an empirical study. *Data Mining and Knowledge Discovery*, 30(4), pp.891-927.
 
 ## Usage and Sample Output (Demo Version)
 Experiments could be reproduced by running **demo_lof.py** directly. You could simply download/clone the entire repository and execute the code by 
@@ -99,7 +106,7 @@ Two evaluation methods are introduced and the result would be saved into "result
 1.  The area under receiver operating characteristic curve (**ROC**)
 2.  mean Average Precision (**mAP**) 
 
-## Results 
+## Results (Obsolete, to be updated with Camera-ready version)
 
 **Table 2: ROC-AUC scores (average of 20 independent trials, highest score highlighted in bold)**
 
