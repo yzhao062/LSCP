@@ -26,30 +26,13 @@ np.set_printoptions(suppress=True, precision=4)
 
 ###############################################################################
 # parameter settings
-# data = 'annthyroid' #
-# data = 'arrhythmia'
-# data = 'breastw' #
+
 data = 'cardio'
-# data = 'glass'
-# data = 'ionosphere'
 # data = 'letter'
-# data = 'lympho'
-# data = 'mnist'
-# data = 'musk'
-# data = 'optdigits'
-# data = 'pendigits'
-# data = 'pima'
-# data = 'satellite'
-# data = 'satimage-2'
-# data = 'shuttle'
-# data = 'speech'
-# data = 'thyroid'
-# data = 'vertebral'
-# data = 'vowels'
-# data = 'wbc'
+
 
 base_detector = 'lof'
-n_ite = 20  # number of iterations
+n_ite = 30  # number of iterations
 test_size = 0.4  # training = 60%, testing = 40%
 n_baselines = 11  # the number of baseline algorithms, DO NOT CHANGE
 
@@ -96,7 +79,7 @@ if __name__ == '__main__':
     for t in range(n_ite):
         print('\nn_ite', t + 1, data)  # print status
 
-        random_state = np.random.RandomState(t)
+        random_state = np.random.RandomState()
 
         # split the data into training and testing
         X_train, X_test, y_train, y_test = train_test_split(X_orig, y_orig,
@@ -126,7 +109,8 @@ if __name__ == '__main__':
 
         #######################################################################
         # fit feature bagging using median of k_list
-        n_neighbors = int(np.median(k_list))
+        # n_neighbors = int(np.median(k_list))
+        n_neighbors = random_state.randint(low=k_min, high=k_max)
         clf = FeatureBagging(base_estimator=LOF(n_neighbors=n_neighbors),
                              n_estimators=len(k_list), check_estimator=False)
         print(clf)
