@@ -1,5 +1,8 @@
-**LSCP is an outlier ensemble framework which could effectively combine various base outlier detectors, 
-with an emphasis on data locality.**
+
+**L**ocally **S**elective **C**ombination in **P**arallel Outlier Ensembles (LSCP): 
+**a fully unsupervised framework to selectively combine base detectors by emphasizing data locality.**
+
+------------
 
 Zhao, Y., Nasrullah, Z., Hryniewicki, M.K. and Li, Z. LSCP: Locally Selective Combination in Parallel Outlier Ensembles. 
 *SIAM International Conference on Data Mining (SDM)*, 2019. **Accepted, to appear**.
