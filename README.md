@@ -1,13 +1,13 @@
-# LSCP (Locally Selective Combination in Parallel Outlier Ensembles)
+# LSCP (Locally Selective Combination in Parallel Outlier Ensembles) -- A Outlier Detector Combination Framework
 
-Zhao, Y., Hryniewicki, M.K., Nasrullah, Z., and Li, Z. LSCP: Locally Selective Combination in Parallel Outlier Ensembles. 
+Zhao, Y., Nasrullah, Z., Hryniewicki, M.K. and Li, Z. LSCP: Locally Selective Combination in Parallel Outlier Ensembles. 
 *SIAM International Conference on Data Mining (SDM)*, 2019. **Accepted, to appear**.
 
 Please cite the paper as:
         
     @conference{zhao2019lscp,
       title = {{LSCP}: Locally Selective Combination in Parallel Outlier Ensembles},
-      author = {Zhao, Yue and Hryniewicki, Maciej K and Nasrullah, Zain and Li, Zheng},
+      author = {Zhao, Yue and Nasrullah, Zain and Hryniewicki, Maciej K and Li, Zheng},
       booktitle = {SIAM International Conference on Data Mining},
       publisher = {Society for Industrial and Applied Mathematics},
       address = {Calgary, Canada},
