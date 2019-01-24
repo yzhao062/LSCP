@@ -110,7 +110,7 @@ Two evaluation methods are introduced and the result would be saved into "result
 1.  The area under receiver operating characteristic curve (**ROC**)
 2.  mean Average Precision (**mAP**) 
 
-## Results (Obsolete, to be updated with Camera-ready version)
+## Results
 
 **Table 2: ROC-AUC scores (average of 30 independent trials, highest score highlighted in bold)**
 
