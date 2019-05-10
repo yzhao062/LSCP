@@ -8,23 +8,30 @@ Zhao, Y., Nasrullah, Z., Hryniewicki, M.K. and Li, Z. LSCP: Locally Selective Co
 *SIAM International Conference on Data Mining (SDM)*, 2019.
 
 Please cite the paper as:
-        
-    @conference{zhao2019lscp,
-      title = {{LSCP}: Locally Selective Combination in Parallel Outlier Ensembles},
-      author = {Zhao, Yue and Nasrullah, Zain and Hryniewicki, Maciej K and Li, Zheng},
-      booktitle = {SIAM International Conference on Data Mining},
-      publisher = {Society for Industrial and Applied Mathematics},
-      address = {Calgary, Canada},
-      month = {May},
-      year = {2019}
-    }
-    
 
-[PDF for Personal Use](https://arxiv.org/abs/1812.01528) | 
+    @inproceedings{zhao2019lscp,
+      title={{LSCP:} Locally Selective Combination in Parallel Outlier Ensembles},
+      author={Zhao, Yue and Nasrullah, Zain and Hryniewicki, Maciej K and Li, Zheng},
+      booktitle={Proceedings of the 2019 {SIAM} International Conference on Data Mining, {SDM} 2019},
+      pages={585--593},
+      month = {May},
+      year={2019},
+      address = {Calgary, Canada},
+      organization={SIAM},
+      url={https://doi.org/10.1137/1.9781611975673.66},
+      doi={10.1137/1.9781611975673.66}
+    }
+        
+
+[PDF for Personal Use](https://epubs.siam.org/doi/pdf/10.1137/1.9781611975673.66) | 
+[SIAM Page](https://epubs.siam.org/doi/abs/10.1137/1.9781611975673.66) | 
+[Presentation Slides](http://www.andrew.cmu.edu/user/yuezhao2/papers/19-sdm-lscp-slides.pdf) | 
 [API Documentation](https://pyod.readthedocs.io/en/latest/pyod.models.html#module-pyod.models.lscp) | 
 [Example with PyOD](https://github.com/yzhao062/pyod/blob/master/examples/lscp_example.py) 
 
-**Update** (Jan 23th, 2019): [Camera-ready version](https://arxiv.org/abs/1812.01528) available for download. 
+**Update** (May 9th, 2019): [Published version](https://epubs.siam.org/doi/pdf/10.1137/1.9781611975673.66) is available for download. 
+
+**Update** (Jan 23th, 2019): [Camera-ready version](https://arxiv.org/abs/1812.01528) is available for download. 
 
 **Update** (Dec 25th, 2018): LSCP has been officially released in **[Python Outlier Detection (PyOD)](https://github.com/yzhao062/pyod)** V0.6.6.
 
