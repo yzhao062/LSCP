@@ -9,9 +9,33 @@ from __future__ import print_function
 
 import warnings
 from collections import defaultdict
-
 import abc
-from sklearn.externals.funcsigs import signature
+import sklearn
+
+
+def _sklearn_version_21():  # pragma: no cover
+    """ Utility function to decide the version of sklearn
+    In sklearn 21.0, LOF is changed. Specifically, _decision_function
+    is replaced by _score_samples
+
+    Returns
+    -------
+    sklearn_21_flag : bool
+        True if sklearn.__version__ is newer than 0.21.0
+
+    """
+    sklearn_version = str(sklearn.__version__)
+    if int(sklearn_version.split(".")[1]) > 20:
+        return True
+    else:
+        return False
+
+
+if _sklearn_version_21():
+    from inspect import signature
+else:
+    from sklearn.externals.funcsigs import signature
+
 from sklearn.externals import six
 
 import numpy as np
