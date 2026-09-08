@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper in preferred-citation below."
+title: "LSCP"
+abstract: "Locally selective combination in parallel outlier ensembles."
+type: software
+authors:
+  - family-names: "Zhao"
+    given-names: "Yue"
+    orcid: "https://orcid.org/0000-0003-3401-4921"
+  - family-names: "Nasrullah"
+    given-names: "Zain"
+  - family-names: "Hryniewicki"
+    given-names: "Maciej K."
+  - family-names: "Li"
+    given-names: "Zheng"
+repository-code: "https://github.com/yzhao062/LSCP"
+keywords:
+  - "anomaly-detection"
+  - "outlier-detection"
+  - "outlier-ensembles"
+  - "data-mining"
+preferred-citation:
+  type: conference-paper
+  title: "LSCP: Locally Selective Combination in Parallel Outlier Ensembles"
+  authors:
+    - family-names: "Zhao"
+      given-names: "Yue"
+      orcid: "https://orcid.org/0000-0003-3401-4921"
+    - family-names: "Nasrullah"
+      given-names: "Zain"
+    - family-names: "Hryniewicki"
+      given-names: "Maciej K."
+    - family-names: "Li"
+      given-names: "Zheng"
+  collection-title: "Proceedings of the 2019 SIAM International Conference on Data Mining (SDM)"
+  year: 2019
+  start: 585
+  end: 593
+  doi: "10.1137/1.9781611975673.66"
+  url: "https://epubs.siam.org/doi/10.1137/1.9781611975673.66"
